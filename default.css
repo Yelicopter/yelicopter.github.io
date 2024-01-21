@@ -1,0 +1,516 @@
+	html,
+	body {
+		height: 100%;
+		
+	}
+
+
+	
+	#logo {
+		transition: opacity 0.1s ease-in-out;
+	}
+
+	
+	#experience {
+		transition: opacity 0.01s ease-in-out;
+	}
+
+	@media (max-width: 768px) {
+		#menu {
+			position: static; /* Default position */
+			width: auto; /* Reset any width adjustments */
+			transform: none; /* Remove transformations */
+		}
+	
+		#header-wrapper {
+			padding-top: 0; /* Remove extra padding if the menu is not fixed */
+		}
+	
+		#logo {
+			margin-top: 5vh; /* Add some space between the menu and the logo */
+			padding: 0; /* Reset any padding to ensure it doesn't push the logo down */
+			display: block; /* Stack logo below the menu */
+			width: 100%; /* Ensure the logo takes full width of its container */
+			text-align: center; /* Center-align the logo content */
+		}
+	
+		#logo img {
+			width: 80%; /* Adjust logo image width as necessary */
+			margin: 0 auto; /* Center the logo image */
+		}
+	
+		.button, .button-home {
+			padding: 0.5em 1em; /* Smaller buttons on smaller screens */
+			font-size: 1em; /* Smaller font size for button text */
+		}
+		
+		/* Adjust font sizes for smaller screens */
+		h1, h2, h3 {
+			font-size: 1.5em;
+		}
+		
+		.title h2 {
+			font-size: 2em; /* Adjust title size for smaller screens */
+		}
+		
+		/* Other responsive adjustments */
+		ul.contact img {
+			width: 50px; /* Smaller social icons for smaller screens */
+		}
+		
+		ul.contact li {
+			padding: 0.2em 0.15em;
+			font-size: 1em; /* Adjust font size for smaller screens */
+		}
+	}
+	
+	
+
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		background: #ffffff;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 400;
+		color: #000000;
+	}
+
+	.image.fit img {
+		width: 100%;
+		height: auto;
+	}
+
+	h1,
+	h2,
+	h3 {
+		margin: 0;
+		padding: 0;
+	}
+
+	p,
+	ol,
+	ul {
+		margin-top: 0;
+	}
+
+	ol,
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+
+	p {
+		line-height: 180%;
+	}
+
+	strong {}
+
+	a {
+		color: #0000FF;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+
+	.container {
+		margin: 0 auto;
+		max-width: 1200px; /* max-width instead of width */
+		width: 100%; /* set width to be 100% */
+	}
+	
+
+	/*********************************************************************************/
+	/* Image Style                                                                   */
+	/*********************************************************************************/
+
+	.image {
+		display: inline-block;
+		border: 1px solid rgba(0, 0, 0, .1);
+	}
+
+	.image img {
+		display: block;
+		width: 100%;
+	}
+
+	.image-full {
+		display: block;
+		width: 100%;
+		margin: 0 4em 0em 0;
+	}
+
+	.image-left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image-centered {
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+	.image-centered img {
+		margin: 0 auto;
+		width: auto;
+	}
+
+	/*********************************************************************************/
+	/* Social Icon Styles                                                            */
+	/*********************************************************************************/
+
+	ul.contact {
+		list-style: none;
+	}
+
+	ul.contact li {
+		display: inline-block;
+		padding: 0em 0.30em;
+		font-size: 1.5em;
+	}
+
+	ul.contact img {
+		width: 100px;
+	}
+
+	ul.contact li span {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul.contact li a {
+		color: #FFF;
+	}
+
+	ul.contact li a:before {
+		display: inline-block;
+		background: #333333;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		border-radius: 40px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+
+	/*********************************************************************************/
+	/* Button Style                                                                  */
+	/*********************************************************************************/
+
+	.button {
+		display: inline-block;
+		margin-top: 2em;
+		padding: 1em 2em 1em 2em;
+		background: #8DCB89;
+		border-radius: 8px;
+		letter-spacing: 0.20em;
+		line-height: 1.8em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	.button-home {
+		display: inline-block;
+		margin-top: 2em;
+		margin-left: -1em;
+		padding: 1em 2em 1em 2em;
+		background: #6F6F6F;
+		border-radius: 8px;
+		letter-spacing: 0.20em;
+		line-height: 1.8em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	.button:before {
+		display: inline-block;
+		background: #8DCB89;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+
+	/*********************************************************************************/
+	/* Heading Titles                                                                */
+	/*********************************************************************************/
+
+	.title {
+		margin-bottom: 3em;
+	}
+
+	.title h2 {
+		font-size: 2.8em;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.title .byline {
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.1em;
+		color: #6F6F6F;
+	}
+
+	/*********************************************************************************/
+	/* Experience                                                                    */
+	/*********************************************************************************/
+
+	/* Experience Section Styles */
+	#experience .container {
+		background-color: #EDEDED;
+		/* Different color than education */
+		padding: 20px 0;
+		
+		padding-top: 50px;
+	}
+
+	#experience .title {
+		text-align: center;
+	}
+
+	#experience .title h2 {
+		color: rgba(0, 0, 0, 0.8);
+	}
+
+	#experience div {
+		padding: 1vw;
+	}
+
+	#experience p,
+	#experience div {
+		line-height: 1.6;
+	}
+
+	#experience ul {
+		padding-left: 20px;
+		/* Indent for bullet points */
+	}
+
+	#experience li {
+		margin-bottom: 10px;
+		list-style: circle;
+	}
+
+	#experience h3 {
+		display: block;
+		text-transform: uppercase;
+		font-size: 1.8em;
+		color: rgba(0, 0, 0, 0.6);
+	}
+
+	/*********************************************************************************/
+	/* Education                                                                     */
+	/*********************************************************************************/
+
+	#education .container {
+		background-color: #FFF;
+		padding: 20px 0;
+	}
+
+	#education .title {
+		text-align: center;
+	}
+
+	#education .title h2 {
+		color: rgba(0, 0, 0, 0.8);
+	}
+
+	#education div {
+		padding: 1vw;
+	}
+
+	#education p,
+	#education div {
+		line-height: 1.6;
+	}
+
+	#education ul {
+		padding-left: 20px;
+	}
+
+	#education li {
+		margin-bottom: 10px;
+		list-style: circle;
+	}
+
+	#education h3 {
+		display: block;
+		text-transform: uppercase;
+		font-size: 1.8em;
+		color: rgba(0, 0, 0, 0.6);
+	}
+
+	/*********************************************************************************/
+	/* Header                                                                        */
+	/*********************************************************************************/
+
+	#header-wrapper {
+		overflow: hidden;
+		padding: 0em 0em 0em 0em;
+		background: #8DCB89;
+	}
+
+	#menu {
+		position: fixed;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		background: #8DCB89;
+		width: 100vw;
+
+		overflow: hidden;
+	}
+
+	/*********************************************************************************/
+	/* Logo                                                                          */
+	/*********************************************************************************/
+
+	#logo {
+		padding: 5em 1em;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 5vh;
+	}
+
+	#logo h1 {
+		font-size: 3.5em;
+	}
+
+	#logo a {
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	#logo span {
+		letter-spacing: 0.10em;
+		text-transform: uppercase;
+		font-size: 1em;
+		color: #233b219c;
+	}
+
+	#logo span a {
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	#logo img {
+		width: 30vw;
+		border-radius: 100%;
+	}
+
+	/*********************************************************************************/
+	/* Menu                                                                          */
+	/*********************************************************************************/
+
+	#menu ul {
+		text-align: center;
+		margin-block-start: 1em;
+	}
+
+	#menu li {
+		display: inline-block;
+	}
+
+	#menu li a,
+	#menu li span {
+		display: inline-block;
+		margin-left: 0.50em;
+		padding: 1em 1.5em;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 0;
+		color: #FFF;
+	}
+
+	#menu .current_page_item a {
+		background: #6FC06A;
+		border-radius: 8px;
+		color: #FFF;
+	}
+
+
+	/*********************************************************************************/
+	/* Wrapper                                                                       */
+	/*********************************************************************************/
+
+	#introduction {
+		background: #242424;
+	}
+
+	#experience {
+		background: #EDEDED;
+	}
+
+
+	#contact {
+		overflow: hidden;
+		padding: 8em 0em;
+		background: #E74E59;
+	}
+
+	#contact div {
+		padding: 1vw;
+	}
+
+	/*********************************************************************************/
+	/* Welcome                                                                       */
+	/*********************************************************************************/
+
+	#welcome {
+		overflow: hidden;
+		padding: 8em 0em;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.3);
+	}
+
+	#welcome .content {
+		padding: 0em 8em;
+	}
+
+	#welcome a,
+	#welcome strong {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	/*********************************************************************************/
+	/* Footer                                                                        */
+	/*********************************************************************************/
+
+	#footer {
+		text-align: center;
+	}
+
+
+	#footer .title span {
+		color: rgba(255, 255, 255, 0.4);
+	}
+
+	/*********************************************************************************/
+	/* Footer                                                                     */
+	/*********************************************************************************/
+
+	footer {
+		background: #333;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}
