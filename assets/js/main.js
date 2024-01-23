@@ -4,43 +4,44 @@ var navHeaderWrapper = $('.navHeaderWrapper');
 var navHeaderTop = $('.navHeaderTop');
 
 hamburger.click(function () {
-  navbarLinks.toggle(); // Toggle the visibility of the navbar links
+  navbarLinks.toggle();
   navHeaderWrapper.toggleClass('menu-open'); // Toggle the background class
-  if(navHeaderWrapper.hasClass('menu-open')) {
-    navHeaderTop.show(); // Show the logo if menu is open
+  if (navHeaderWrapper.hasClass('menu-open') || window.scrollY > 100) {
+    // If the menu is open or the page is scrolled down, show the logo
+    navHeaderTop.show();
   } else {
-    navHeaderTop.hide(); // Hide the logo if menu is closed
+    // If the menu is closed and the page is not scrolled down, hide the logo
+    navHeaderTop.hide();
   }
   hamburger.toggleClass('active');
   return false;
 });
 
 function closer() {
-  navbarLinks.hide(); // Hide the navbar links
-  navHeaderWrapper.removeClass('menu-open'); // Ensure the background class is removed
-  navHeaderTop.hide(); // Hide the logo
-  hamburger.removeClass('active');
+  if ($(window).width() <= 768) {
+    navbarLinks.hide(); // Hide the navbar links only for smaller screens
+    navHeaderWrapper.removeClass('menu-open');
+    hamburger.removeClass('active');
+  }
 }
 
 /* Open when someone clicks on the span element */
 function openNav() {
-  if (isOn) {
-    document.getElementById("myNav").style.height = "100%";
-    $(".line").css("background", "white");
-    isOn = false;
-  } else {
-    document.getElementById("myNav").style.height = "0%";
-    $(".line").css("background", "black");
-    isOn = true;
-  }
+  // This seems to be handling a separate overlay menu, which may not be needed
+  // if you are toggling the .navbar-links visibility instead
+  // You may need to adjust this part depending on how your overlay menu should work
 }
 
 window.onscroll = function() {
   var navHeaderWrapper = document.querySelector('.navHeaderWrapper');
-  if (window.scrollY > 350) {
-      navHeaderWrapper.classList.add('scrolled');
+  if (window.scrollY > 100) {
+    navHeaderWrapper.classList.add('scrolled');
+    $('.navHeaderTop').show(); // Ensure the logo is shown when scrolled down
   } else {
-      navHeaderWrapper.classList.remove('scrolled');
+    navHeaderWrapper.classList.remove('scrolled');
+    if (!navHeaderWrapper.classList.contains('menu-open')) {
+      // Hide the logo only if the menu is not open
+      $('.navHeaderTop').hide();
+    }
   }
 };
-
