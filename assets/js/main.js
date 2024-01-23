@@ -5,7 +5,7 @@ var navHeaderTop = $('.navHeaderTop');
 
 hamburger.click(function () {
   navbarLinks.toggle();
-  navHeaderWrapper.toggleClass('menu-open'); // Toggle the background class
+  navHeaderWrapper.toggleClass('menu-open'); 
   if (navHeaderWrapper.hasClass('menu-open') || window.scrollY > 100) {
     // If the menu is open or the page is scrolled down, show the logo
     navHeaderTop.show();
@@ -25,13 +25,6 @@ function closer() {
   }
 }
 
-/* Open when someone clicks on the span element */
-function openNav() {
-  // This seems to be handling a separate overlay menu, which may not be needed
-  // if you are toggling the .navbar-links visibility instead
-  // You may need to adjust this part depending on how your overlay menu should work
-}
-
 window.onscroll = function() {
   var navHeaderWrapper = document.querySelector('.navHeaderWrapper');
   if (window.scrollY > 100) {
@@ -43,5 +36,15 @@ window.onscroll = function() {
       // Hide the logo only if the menu is not open
       $('.navHeaderTop').hide();
     }
+  }
+
+  var head = document.querySelector('.container-fluid');
+  var distanceY = window.scrollY || document.documentElement.scrollTop;
+  var shrinkOn = 50; // The number of pixels scrolled down before fading starts
+
+  if (distanceY > shrinkOn) {
+    head.style.opacity = 1 - (distanceY - shrinkOn) / shrinkOn;
+  } else {
+    head.style.opacity = 1;
   }
 };
