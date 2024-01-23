@@ -20,7 +20,6 @@ hamburger.click(function () {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
-
       document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
       });
@@ -29,7 +28,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function closer() {
   if ($(window).width() <= 768) {
-    navbarLinks.hide(); // Hide the navbar links only for smaller screens
+    navbarLinks.hide();
     navHeaderWrapper.removeClass('menu-open');
     hamburger.removeClass('active');
   }
@@ -39,11 +38,10 @@ window.onscroll = function() {
   var navHeaderWrapper = document.querySelector('.navHeaderWrapper');
   if (window.scrollY > 100) {
     navHeaderWrapper.classList.add('scrolled');
-    $('.navHeaderTop').show(); // Ensure the logo is shown when scrolled down
+    $('.navHeaderTop').show(); 
   } else {
     navHeaderWrapper.classList.remove('scrolled');
     if (!navHeaderWrapper.classList.contains('menu-open')) {
-      // Hide the logo only if the menu is not open
       $('.navHeaderTop').hide();
     }
   }
