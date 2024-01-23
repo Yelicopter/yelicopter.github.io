@@ -17,6 +17,16 @@ hamburger.click(function () {
   return false;
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
 function closer() {
   if ($(window).width() <= 768) {
     navbarLinks.hide(); // Hide the navbar links only for smaller screens
