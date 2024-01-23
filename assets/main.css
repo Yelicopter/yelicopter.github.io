@@ -18,6 +18,10 @@ a:link,a:visited {
     color: #757575
 }
 
+.container-fluid {
+    transition: opacity 0.4s ease-in-out;
+}
+
 li,p {
     font-family: 'Open Sans',sans-serif;
     font-size: 14pt
@@ -77,7 +81,7 @@ ul {
 }
 
 #logo {
-    width: 7%;
+    width: 5%;
 }
 
 #portPic {
@@ -107,7 +111,7 @@ ul {
     align-items: center 
 }
 
-.about,.contact,.contact-icon,.hr,.projects,.skills {
+.about,.contact,.contact-icon,.hr,.experience,.skills {
     color: #000
 }
 
@@ -130,11 +134,18 @@ ul {
     padding-right: 15px!important
 }
 
-.projects {
-    background-color: #fff;
-    margin-left: 15px!important;
-    margin-right: 15px!important
+.experience {
+    background-color: #fdf7ff;
+    padding-left: 15px!important;
+    padding-right: 15px!important
 }
+
+.education {
+    background-color: #fff;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+  
 
 .contact {
     background-color: #f5f5f0
