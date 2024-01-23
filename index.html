@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yeliz Durmaz</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <link rel="stylesheet" href="assets/main.css" />
+
+    <!-- Bootstrap and Font-awesome CDN's -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header vertical-center">
+
+
+        <nav class="navHeaderWrapper">
+            <div class="navHeaderTop"><img src="assets/images/logo.png" alt="logo" id="logo"></div>
+            <!-- Container for the navbar links -->
+            <div class="navbar-links">
+                <a href="#about" onclick="closer()">About</a>
+                <a href="#skills" onclick="closer()">Skills</a>
+                <a href="#projects" onclick="closer()">Projects</a>
+                <a href="#contact" onclick="closer()">Contact</a>
+            </div>
+            <!-- Hamburger icon -->
+            <div class="hamburger">
+                <a id="hamburger-icon" href="#" title="Menu">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div>
+                <strong>
+                    <h1>Yeliz Durmaz</h1>
+                </strong>
+                <h2>Honours CS Student & Software Developer</h2>
+            </div>
+        </div>
+        <canvas class="background">
+        </canvas>
+    </div>
+
+    <!-- About page -->
+    <div class="about padding" id="about">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-4">
+                    <div class="profile">
+
+                        <!-- Alt is used if the image is not loading -->
+                        <center><img src="assets/images/profile.jpg" id="portPic" alt="Simple icon" class="img-responsives
+            img-circle"></center>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="about-description">
+                        <b>
+                            <h3>About Me</h3>
+                        </b>
+                        <hr>
+                        <p>Hi, I'm Yeliz! Currently I am a dual-degree student. I am an honours B.Sc. Computer Science
+                            student at the VU University Amsterdam,
+                            while I am also studying B.Sc. Science, Business & Innovation there. My programming related
+                            courses in SBI sparked my interest in
+                            software development and pushed me to start studying Computer Science, where my interest has
+                            grown even more. It is evident that I
+                            love learning that I love learning about innovative technologies.
+                            <br><br>
+                            In my free time I love to draw, follow a mumber of sci-fi/fantasy shows and movies, and give
+                            back to the community. I demonstrate
+                            this by teaching children of the ages around 8-14 about programming in the weekends, and
+                            during the week I am a teaching assistant
+                            at the VU University for multiple courses. I hope to continue blending my passion for
+                            technology and education in my future.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills padding" id="skills">
+        <div class="container" style="font-family: 'Open Sans'">
+            <b>
+                <h3>Skills</h3>
+            </b>
+            <hr>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <center><i class="contact-icon fa fa-gear fa-3x"></i>
+                        <strong>
+                            <h4>Programming Languages</h4>
+                        </strong>
+                    </center>
+                    <ul>
+                        <li>Java</li>
+                        <li>Scala</li>
+                        <li>JavaScript</li>
+                        <li>C</li>
+                        <li>C#</li>
+                        <li>C++</li>  
+                        <li>Assembly x86/64</li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <center><i class="contact-icon fa fa-window-maximize fa-3x"></i>
+                        <strong>
+                            <h4>Web Languages/Frameworks</h4>
+                        </strong>
+                    </center>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>Three.js</li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <center><i class="contact-icon fa fa-cloud fa-3x"></i>
+                        <strong>
+                            <h4>Other</h4>
+                        </strong>
+                    </center>
+                    <ul>
+                        <li>SQL</li>
+                        <li>UI/UX Design</li>
+                        <li>Git</li>
+                        <li>Latex</li>
+                    </ul>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects padding" id="projects">
+        <div class="container">
+            <b>
+                <h3>Experience</h3>
+            </b>
+            <hr>
+            <br>
+
+            <div>
+                <div>
+                    <div>
+                        <b>
+                            <h3>Software Developer R&D</h3>
+                        </b>
+                        <hr>
+                        <p>Since December 2023, I've been part of the <strong>R&D - Mobile team</strong> at ChipSoft as
+                            a Working Student Software
+                            Developer, based in the Amsterdam area. My primary focus is on developing user-friendly
+                            interfaces using <strong>Blazor Dashboard Programming</strong> and enhancing functionalities
+                            with <strong>C#</strong>. I work
+                            with the <strong>Microsoft .NET Framework</strong>, integrating my skills in ASP.NET Razor
+                            to contribute
+                            effectively to our software projects. At ChipSoft, my role is to support the team in
+                            delivering reliable and efficient software solutions that meet our client's needs.</p>
+                        <br>
+                        <p><i>December 2023 - present</i></p>
+                        <p>@ <a href="https://chipsoft.com/en" target="_blank">Chipsoft, Amsterdam</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <div>
+                    <div>
+                        <b>
+                            <h3>Teaching Assistant</h3>
+                        </b>
+                        <hr>
+                        <p>Since September 2023, I've taken on the role of a Teaching Assistant at VU University
+                            Amsterdam. In this role, I've been engaged in guiding students through various aspects of
+                            computer science and programming. I assist in courses like <strong>Computer
+                                Programming</strong>,
+                            <strong>Computational Thinking for Coders</strong>, <strong>Computer Organization</strong>,
+                            and <strong>Introduction to CS &
+                                Programming</strong>, which is part of the B.Sc. Creative Technology at the University
+                            of Twente.
+                            My focus is on instructing in <strong>C++</strong>, <strong>Processing</strong>, and
+                            <strong>Assembly x86/64</strong>, ensuring students grasp
+                            these critical programming languages and concepts fundamental to their studies in computer
+                            science.
+                        </p>
+                        <br>
+                        <p>@ <a href="https://vu.nl/nl" target="_blank">VU University, Amsterdam</a> |
+                            <a href="https://studiegids.vu.nl/en/Bachelor/2023-2024/computer-science#/tab=2s"
+                                target="_blank">Curriculum</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <div>
+                    <div>
+                        <b>
+                            <h3>Programming Trainer</h3>
+                        </b>
+                        <hr>
+                        <p>Since July 2023, I have been enriching young minds as a Programming Trainer at Logiscool
+                            Netherlands, based in Amsterdam. My role involves teaching coding and programming to
+                            children and teenagers, breaking down complex concepts into understandable lessons. I cover
+                            a range of topics including <strong>game development</strong>, <strong>web design</strong>,
+                            and <strong>robotics</strong>, all tailored to be engaging and accessible for young
+                            learners. My focus is on sparking curiosity and building foundational skills that set the
+                            stage for future innovation and creativity in technology
+                        </p>
+                        <br>
+                        <p>@ <a href="https://www.logiscool.com/en-nl/about" target="_blank">Logiscool, Amsterdam
+                                West</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <div>
+                    <div>
+                        <b>
+                            <h3>Licensing Specialist</h3>
+                        </b>
+                        <hr>
+                        <p>From July 2022 to May 2023, I worked as a Licensing Specialist at Crayon, where I played a
+                            key role in collaborating with the Microsoft support team. My responsibilities included
+                            <strong>resolving issues</strong>, <strong>managing activations</strong>, and overseeing
+                            <strong>tenant creation</strong>. I focused on building strong customer relationships by
+                            applying my knowledge of <strong>Microsoft processes and portals</strong>, and by expanding
+                            our Microsoft support network. Additionally, I supported various <strong>operational
+                                activities</strong> like sales support, managing new business and renewals, and ensuring
+                            accurate data entry in our CRM system. My contributions were aimed at enhancing operational
+                            efficiency and process improvement within the organization
+                        </p>
+                        <br>
+                        <p>@ <a href="https://www.crayon.com/global-site/" target="_blank">Crayon, Amsterdam</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact padding" id="contact">
+        <div class="container">
+            <b>
+                <h3>Contact Me</h3>
+            </b>
+            <hr>
+            <div class="row">
+                <center>
+                    <div class="col-md-2 col-sm-2 col-xs-6">
+                        <a href="mailto:yeliz2001durmaz@gmail.com" target="blank">
+                            <i class="contact-icon fa fa-envelope fa-5x"></i>
+                        </a>
+                        <br>
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 col-xs-6">
+                        <a href="https://github.com/yelicopter" target="blank">
+                            <i class="contact-icon fa fa-github fa-5x"></i>
+                        </a>
+                        <br>
+                    </div>
+
+                    <div class="col-md-2 col-sm-2 col-xs-6">
+                        <a href="https://ca.linkedin.com/in/yelizamrud" target="blank">
+                            <i class="contact-icon fa fa-linkedin fa-5x"></i>
+                        </a>
+                        <br>
+                    </div>
+
+                </center>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer header">
+        <div class="container">
+            <footer>
+                <p>© 2024 by Yeliz Durmaz</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Imports -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Particles script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <!-- Main script -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
