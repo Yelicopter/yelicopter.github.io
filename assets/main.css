@@ -1,0 +1,407 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.img,ul {
+    margin: auto
+}
+
+.background,.img {
+    position: absolute
+}
+
+.footer,h2,h3 {
+    text-align: center
+}
+
+a:link,a:visited {
+    color: #757575
+}
+
+li,p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14pt
+}
+
+h1 {
+    font-family: Playfair Display,serif!important;
+    font-size: 14vmin!important;
+    color:#000;
+}
+
+h2 {
+    font-family: MoonLight,'Open Sans',sans-serif!important;
+    font-size: 25pt!important
+}
+
+h3 {
+    font-family: MoonBold,'Open Sans',sans-serif!important;
+    font-size: 20pt!important
+}
+
+h4 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15pt
+}
+
+@font-face {
+    font-family: GilroyBold;
+    src: url(fonts/Gilroy-ExtraBold.otf)
+}
+
+@font-face {
+    font-family: GilroyLight;
+    src: url(fonts/Gilroy-Light.otf)
+}
+
+@font-face {
+    font-family: MoonBold;
+    src: url(fonts/Moon-Bold.otf)
+}
+
+@font-face {
+    font-family: MoonLight;
+    src: url(fonts/Moon-Light.otf)
+}
+
+
+ul {
+    width: 70%
+}
+
+.img {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+#logo {
+    width: 7%;
+}
+
+#portPic {
+    padding-top: 30px
+}
+
+.img-responsives {
+    max-width: 70%;
+    max-height: 70%
+}
+
+.header {
+    background: linear-gradient(rgba(206, 191, 250, 0.241),rgba(255, 255, 255, 0.2)) center no-repeat;
+    background-size: cover
+}
+
+.container-fluid {
+    z-index: 1
+}
+
+.vertical-center {
+    height: 100vh;
+    color: #0000008e;
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center 
+}
+
+.about,.contact,.contact-icon,.hr,.projects,.skills {
+    color: #000
+}
+
+.padding {
+    padding-top: 50px;
+    padding-bottom: 80px
+}
+
+.about {
+    background-color: #fff;
+    margin: 15px!important
+}
+
+.skills {
+    font-family: 'Open Sans';
+    background-color: #f5f5f0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px!important;
+    padding-right: 15px!important
+}
+
+.projects {
+    background-color: #fff;
+    margin-left: 15px!important;
+    margin-right: 15px!important
+}
+
+.contact {
+    background-color: #f5f5f0
+}
+
+.footer {
+    padding-top: 30px;
+    display: flex;
+    padding-bottom: 30px;
+    color: black;
+    background-color: rgba(233, 205, 255, 0.164);
+    font-family: MoonLight
+}
+
+@media only screen and (max-width: 800px) {
+    .center {
+        margin-left:10%;
+    }
+
+    h2 {
+        text-align: left
+    }
+
+    #portPic {
+        padding-top: 0!important
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:1000px) {
+    .img-responsives {
+        width:35%;
+        height: auto
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-description {
+        padding-right:20px
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y:auto
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px
+    }
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #008C9E;
+    overflow-y: hidden;
+    transition: .5s
+}
+
+.overlay-content {
+    /* position: fixed;
+    top: 0%;
+    width: 100%;
+    text-align: right;
+    padding-right: 1.5rem;
+    justify-content: space-between;
+    left: 0;
+    z-index: 100000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    font-family: Open Sans,sans-serif; */
+    background-color: transparent;
+    font-size: 1.5rem;
+
+}
+
+
+div {
+    display:block;
+}
+
+
+
+/* .overlay a {
+    font-family: 'Open Sans',sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #FFF;
+    display: block;
+    transition: .3s
+} */
+
+.overlay a:focus,.overlay a:hover {
+    color: #f1f1f1
+}
+
+/* Hamburger icon lines*/
+#hamburger-icon {
+    position: fixed;
+    right: 60px;
+    font-size: 60px;
+    z-index: 3;
+    cursor: pointer;
+    display: block;
+    transition: all 1s cubic-bezier(.19,1,.22,1)
+}
+
+#hamburger-icon .line {
+    position: fixed;
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 4px;
+    transition: all .6s cubic-bezier(.5,.1,0,1.2);
+    -webkit-transition: all .6s cubic-bezier(.5,.1,0,1.2);
+    -moz-transition: all .6s cubic-bezier(.5,.1,0,1.2)
+}
+
+#hamburger-icon .line.line-1 {
+    top: 30px
+}
+
+#hamburger-icon .line.line-2 {
+    top: 37px
+}
+
+#hamburger-icon .line.line-3 {
+    top: 44px
+}
+
+
+/* Hamburger icon animation*/
+#hamburger-icon.active .line-1 {
+    transform: translateY(7px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(7px) translateX(0) rotate(45deg)
+}
+
+#hamburger-icon.active .line-2 {
+    opacity: 0
+}
+
+#hamburger-icon.active .line-3 {
+    transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-7px) translateX(0) rotate(-45deg)
+}
+
+.navHeaderWrapper {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the items */
+    padding: 2.5rem; /* Add some padding on the sides */
+    width: 100%;
+    transition: background-color 0.3s, padding 0.3s;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+
+.navHeaderTop {
+    flex-grow: 1; /* Allows the name to grow and take up space */
+    white-space: nowrap; /* Prevents the name from wrapping */
+    display: none;
+}
+
+/* Show the .navHeaderTop when .navHeaderWrapper has the 'scrolled' class */
+.navHeaderWrapper.scrolled .navHeaderTop {
+    display: block; /* Show the name when scrolled */
+}
+
+.navHeaderWrapper.scrolled {
+    background-color: white;
+}
+
+/* Styles for the navHeaderWrapper when the menu is open */
+.navHeaderWrapper.menu-open {
+    background-color: white; /* Set the background to white */
+}
+
+.navbar-links {
+    flex-grow: 2; /* Allows navigation links to grow and take up space */
+    display: flex; /* Display the links inline */
+    justify-content: flex-end; /* Align the links to the end (right side) */
+}
+
+.navbar-links a {
+    margin: 0.13rem;
+    padding: 0 15px; /* Space out the links */
+}
+
+.hamburger {
+    display: none; /* Initially hide the hamburger */
+    flex-grow: 0;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+/* Hamburger icon lines */
+#hamburger-icon .line {
+    display: block;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    transition: transform 0.3s;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Directly below the navHeaderWrapper */
+        left: 0;
+        background-color: white; /* Optional: Set background color for the dropdown */        
+    }
+
+    .navbar-links a {
+        display: block; /* Stack the links vertically */
+        width: 100%; /* Each link takes full width */
+        text-align: center; /* Center the text */
+        padding: 10px; /* Add padding for touch targets */
+        border-bottom: 1px solid #ccc; /* Optional: Add a separator between links */
+    }
+
+    .navHeaderWrapper.menu-open .navHeaderTop {
+        display: block; /* Show the logo when the menu is open */
+    }
+
+    #hamburger-icon.active ~ .navbar-links {
+        display: flex; /* Show the navbar links when hamburger is active */
+    }
+
+    #logo {
+        width: 7%;
+    }
+}
+
+/* Media Query for scroll effect */
+@media screen and (min-width: 769px) {
+    .scrolled .navHeaderTop {
+        display:flex;
+        opacity: 1;
+        margin-right: 20px;
+    }
+    .scrolled .navHeaderWrapper {
+        background-color: #fff; /* Opaque background */
+    }
+}
