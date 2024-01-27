@@ -19,7 +19,6 @@ hamburger.click(function () {
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-      e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
       });
@@ -56,3 +55,20 @@ window.onscroll = function() {
     head.style.opacity = 1;
   }
 };
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var currentPage = window.location.pathname.split("/").pop();
+
+//   // Find all h3 elements
+//   var headers = document.querySelectorAll("h3");
+
+//   headers.forEach(function(header) {
+//       if (header.textContent.trim() === currentPage) {
+//           header.style.display = "none"; // Hide the h3 that matches the current page
+//       }
+//   });
+
+//   // Set the #page content
+//   document.getElementById("currentPage").textContent = currentPage;
+// });
+

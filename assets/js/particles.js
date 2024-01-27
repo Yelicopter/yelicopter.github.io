@@ -3,7 +3,7 @@ window.onload = function () {
     // normal options
     selector: '.background',
     maxParticles: 90,
-    color: '#E0B2FF',
+    color: '#AAABBB',
     speed: 2,
     minDistance: 110,
     connectParticles: true,
@@ -33,4 +33,3 @@ window.onload = function () {
     ]
   });
 };
-

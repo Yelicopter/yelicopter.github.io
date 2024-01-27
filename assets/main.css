@@ -40,7 +40,8 @@ h2 {
 
 h3 {
     font-family: MoonBold,'Open Sans',sans-serif!important;
-    font-size: 20pt!important
+    font-size: 20pt!important;
+    padding-top: 30px;
 }
 
 h4 {
@@ -216,19 +217,6 @@ ul {
 }
 
 .overlay-content {
-    /* position: fixed;
-    top: 0%;
-    width: 100%;
-    text-align: right;
-    padding-right: 1.5rem;
-    justify-content: space-between;
-    left: 0;
-    z-index: 100000;
-    margin-top: 30px;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    font-family: Open Sans,sans-serif; */
     background-color: transparent;
     font-size: 1.5rem;
 
@@ -238,18 +226,6 @@ ul {
 div {
     display:block;
 }
-
-
-
-/* .overlay a {
-    font-family: 'Open Sans',sans-serif;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #FFF;
-    display: block;
-    transition: .3s
-} */
 
 .overlay a:focus,.overlay a:hover {
     color: #f1f1f1
@@ -311,7 +287,7 @@ div {
     display: flex; /* Use flexbox */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between the items */
-    padding: 2.5rem; /* Add some padding on the sides */
+    padding: 2.5rem;
     width: 100%;
     transition: background-color 0.3s, padding 0.3s;
     background-color: transparent;
@@ -333,7 +309,7 @@ div {
 }
 
 .navHeaderWrapper.scrolled {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with 50% opacity */
 }
 
 /* Styles for the navHeaderWrapper when the menu is open */
